@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/XHtml.xhtml to edit this template
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    
+    
+    <h:head>
+        <title>Logout Menu</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <h:outputStylesheet library="webjars" name="font-awesome/6.0.0/css/all-jsf.css" />
+        
+      
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        
+        
+    </h:head>
+    <h:body>               
+        
+        <ui:component>    
+        <ui:composition template="./commonMenu.xhtml">
+             
+            <ui:define name="menu" >  
+                   
+
+                   <li class="nav-item">      
+
+
+                     <p:commandLink class=" mx-2 nav-link text-white"   > Registrarse</p:commandLink>				           
+
+                 </li>	
+
+                 <li class="nav-item">      
+
+                     <h:form prependId="false"> 
+                         <h:commandLink   action="login"  class=" mx-2 nav-link text-white"
+                                        value="Iniciar sesion" > </h:commandLink>                      
+                         
+                     </h:form>               
+                 </li>  
+            </ui:define>
+             
+        </ui:composition>
+            
+            </ui:component>
+       
+    </h:body>
+</html>

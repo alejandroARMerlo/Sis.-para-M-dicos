@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/XHtml.xhtml to edit this template
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"        
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>TODO supply a title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </h:head>
+    <h:body>
+        
+        
+        <ui:component>    
+        <ui:composition template="./commonMenu.xhtml">
+             
+            <ui:define name="menu" >  
+                   
+
+                   <li class="nav-item">      
+
+
+                     <p:commandLink class=" mx-2 nav-link text-white"   > Bienvenido</p:commandLink>				           
+
+                 </li>                 
+                     
+                  <li class="nav-item " >
+					           
+                            <h:form onsubmit="this.action='#{request.contextPath}/logout';">
+
+
+
+                                    <h:commandLink   class="nav-link text-white"   > 
+
+                                        <i class="fas fa-user-times " > Salir</i></h:commandLink> 
+
+
+
+                            </h:form>
+                </li>                
+
+             </ui:define>
+             
+        </ui:composition>
+        
+        </ui:component> 
+        
+        
+    </h:body>
+</html>
